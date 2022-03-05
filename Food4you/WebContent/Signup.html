@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <p class="left">GO 4 FOOD</p>
+            <div class="logo"> <img src="logopic.jpg" alt="logo"> </div>
+            <li class="home"><a href="./Home.html">Home</a> </li>
+            <li><a href="#">Menu </a></li>
+            <li><a href="#">Coupon</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="./Signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+    <div class=" background1">
+        <div class="formbody">
+            <div class="container">
+                <center>
+                    <div class="title">Signup</div>
+                </center>
+                <br>
+                <div class="icon">
+                    <ul class="unicon">
+                        <li> <a href="#"><img src="fb.jfif" alt="" class="fb" width="60px"></a></li>
+                        <li ><a href="#"><img src="instagram.png" alt="" class="fb" width="60px"></a></li>
+                        <li ><a href="#"><img src="google.jfif" alt="" class="fb" width="60px"></a></li>
+                    </ul>
+                </div>
+                <form action="Signup.jsp" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" name="fname" placeholder="Enter your first name" minlength="2"
+                                maxlength="20" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" name="lname" placeholder="Enter your last name" minlength="2"
+                                maxlength="14" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">User Name</span>
+                            <input type="text" name="username" placeholder="Enter your password" minlength="5"
+                                maxlength="25" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email id</span>
+                            <input type="text" name="email" placeholder="Enter your email id" minlength="4"
+                                maxlength="25" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Gender</span>
+                            <input type="text" name="Gender" placeholder="Enter Gender" minlength="4"
+                                maxlength="7" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mobile Number</span>
+                            <input type="text" name="mobile" placeholder="Enter your mobile number" minlength="10"
+                                maxlength="10" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Address</span>
+                            <input name="address" placeholder="Enter your address" minlength="5" maxlength="50"
+                                required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" id= "pwd" name="password" placeholder="Enter your password" minlength="8"
+                                maxlength="25" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input type="password" id = "cpwd" name="caddress" placeholder="Confirm your password" minlength="8"
+                                maxlength="25" required>
+                        </div>
+                    </div>
+                <!----   <div class="gender-details">
+                        <input type="radio" name="gender" id="dot-1">
+                        <input type="radio" name="gender" id="dot-2">
+                        <input type="radio" name="gender" id="dot-3">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="dot-3">
+                                <span class="dot three"></span>
+                                <span class="gender">Other</span>
+                            </label>
+                        </div>
+                    </div> --> 
+                    <center>
+                        <div class="button">
+                            <label style = "color: red;" id = "test"></label><br>
+                            <input type="submit" onclick="return check()" name="submitto" value="Register">
+                        </div>
+                        <div class="reset">
+                            <input type="reset" name="resetto" value="Reset">
+                        </div>
+                        <script>
+                        function check(){
+                            var password = document.getElementById("pwd").value;
+                            var cpassword = document.getElementById("cpwd").value;
+                            if(password == cpassword) {
+                                document.getElementById("test")  //.innerHTML = "Form submitted"
+                                return true;
+                            }
+                            else{
+                                document.getElementById("test").innerHTML = "Password didn't match"
+                                return false;
+                         
+                            }
+                        }
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i> </a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            <li>
+                <a href="./aboutus.html">About </a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Contact </a>
+            </li>
+        </ul>
+        <p class="copyright">
+            All rights reserved under Team leader Satyajeet,Aashish,Anurag,Aryan,Deepak,Harsh,Shruti @2021
+        </p>
+    </section>
+</body>
+</html>
